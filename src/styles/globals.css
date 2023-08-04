@@ -105,3 +105,36 @@ a {
     color-scheme: dark;
   }
 }
+
+body {
+  background-image: url('../asstes/homepage-background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-wrapper {
+  max-width: 1120px;
+  width: 100%;
+}
+.tab-nav  {
+  background-color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,117,255,.0898711);
+  padding: 0px 70px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 9;
+}
+.tab-nav-item {
+  padding: 30px;
+}
+
+.tab-result {
+  background-color: #fff;
+  color: #000;
+  /*50px30px40px*/padding: 50px 30px 40px;
+  border-radius: 40px;
+  position: relative;
+  top: -30px;
+  z-index: 0;
+}
