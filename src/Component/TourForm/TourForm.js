@@ -12,6 +12,7 @@ const TourForm = ({ multi }) => {
 
     // const 
     const handleClick = (e) => {
+        // eslint-disable-next-line react/jsx-key
         setLength([...elementLength, <Form multi={multi} />]);
     }
     return (
@@ -19,7 +20,7 @@ const TourForm = ({ multi }) => {
             <Form multi={multi} />
             {
                 elementLength.map((element, index) => (
-                <div key={index}>{element}</div>
+                <Box key={index * .5}>{element}</Box>
             ))}
             {
                     multi && <Button onClick={handleClick} variant="outlined">Add New</Button>
